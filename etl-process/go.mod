@@ -1,4 +1,4 @@
-module etl-process
+module github.com/onurozerdal/hepsiburada-case/etl-process
 
 go 1.17
 

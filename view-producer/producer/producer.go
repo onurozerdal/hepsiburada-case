@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	cc "hepsiburada-case/view-producer/config"
+	cc "github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/view-producer/config"
 	"log"
 	"os"
 	"time"

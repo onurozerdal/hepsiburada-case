@@ -2,16 +2,16 @@ package product
 
 import (
 	"fmt"
-	"hepsiburada-case/etl-process/database"
-	"hepsiburada-case/etl-process/infrastructure"
-	"hepsiburada-case/etl-process/repository"
+	"github.com/onurozerdal/hepsiburada-case/etl-process/database"
+	"github.com/onurozerdal/hepsiburada-case/etl-process/infrastructure"
+	"github.com/onurozerdal/hepsiburada-case/etl-process/repository"
 )
 
 func Process() {
 	connectionDataDb := database.NewDataDbConnection()
 	sqlHandler := infrastructure.NewSqlHandler(connectionDataDb)
 	repositoryDataDb := repository.NewRepository(*sqlHandler)
-	r , err := repositoryDataDb.ProductsCategories()
+	r, err := repositoryDataDb.ProductsCategories()
 	if err != nil {
 		panic(err)
 	}

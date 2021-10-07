@@ -1,7 +1,7 @@
 package main
 
 import (
-	"hepsiburada-case/stream-reader/consumer"
+	"github.com/onurozerdal/hepsiburada-case/stream-reader/consumer"
 )
 
 func main() {

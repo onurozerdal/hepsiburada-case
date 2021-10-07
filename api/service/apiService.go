@@ -2,14 +2,14 @@ package service
 
 import (
 	"errors"
-	"hepsiburada-case/api/model"
-	"hepsiburada-case/api/repository"
+	"github.com/onurozerdal/hepsiburada-case/api/model"
+	"github.com/onurozerdal/hepsiburada-case/api/repository"
 )
 
 const (
 	personalized    = "personalized"
 	nonPersonalized = "non-personalized"
-	maxArraySize = 5
+	maxArraySize    = 5
 )
 
 type ApiService struct {

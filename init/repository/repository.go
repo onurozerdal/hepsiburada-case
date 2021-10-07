@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"hepsiburada-case/init/infrastructure"
+	"github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/init/infrastructure"
 )
 
 type Repository struct {
@@ -15,12 +15,12 @@ func NewRepository(iDbHandler infrastructure.SqlHandler) *Repository {
 }
 
 func (repository *Repository) CreateTable() {
-	statement:= `CREATE DATABASE recommendation`
+	statement := `CREATE DATABASE recommendation`
 	dbHandler.Exec(statement)
 }
 
 func (repository *Repository) CreateHistory() {
-	statement:= `create table history
+	statement := `create table history
 		(
 			message_id varchar not null,
 			user_id varchar not null,
@@ -37,7 +37,7 @@ func (repository *Repository) CreateHistory() {
 }
 
 func (repository *Repository) CreateBestseller() {
-	statement:= `create table bestseller
+	statement := `create table bestseller
 		(
 			product_id varchar not null,
 			quantity int not null
@@ -51,7 +51,7 @@ func (repository *Repository) CreateBestseller() {
 }
 
 func (repository *Repository) CreateProducts() {
-	statement:= `create table products
+	statement := `create table products
 		(
 			product_id varchar not null,
 			category_id varchar not null

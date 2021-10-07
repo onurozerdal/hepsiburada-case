@@ -1,4 +1,4 @@
-module view-producer
+module github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/view-producer
 
 go 1.17
 

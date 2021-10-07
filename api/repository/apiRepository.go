@@ -2,7 +2,7 @@ package repository
 
 import (
 	"fmt"
-	"hepsiburada-case/api/infrastructure"
+	"github.com/onurozerdal/hepsiburada-case/api/infrastructure"
 )
 
 type ApiRepository struct {
@@ -112,6 +112,6 @@ func (repository *ApiRepository) Bestseller10ProductsByUserInterest(userId strin
 }
 
 func (repository *ApiRepository) DeleteHistory(userId, productId string) {
-	statement:= `delete from history h where h.user_id = $1 and h.product_id = $2`
+	statement := `delete from history h where h.user_id = $1 and h.product_id = $2`
 	repository.dbHandler.QueryRow(statement, userId, productId).Scan(&userId)
 }

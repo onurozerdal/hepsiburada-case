@@ -1,6 +1,6 @@
 package main
 
-import "hepsiburada-case/init/initialize"
+import "github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/init/initialize"
 
 func main() {
 	initialize.Initialize()

@@ -29,6 +29,21 @@ services:
     environment:
       - PGDATA=postgres
 
+  init:
+    image: docker.io/onurozerdal/hepsiburada-init:latest
+    build: .
+  view-producer:
+    image: docker.io/onurozerdal/hepsiburada-view-producer:latest
+    build: .
+  stream-reader:
+    image: docker.io/onurozerdal/hepsiburada-stream-reader:latest
+    build: .
+  etl-process:
+    image: docker.io/onurozerdal/hepsiburada-etl-process:latest
+    build: .
+  api:
+    image: docker.io/onurozerdal/hepsiburada-api:latest
+    build: .
 networks:
   kafka-network:
     name: kafka-network

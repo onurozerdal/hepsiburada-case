@@ -1,10 +1,10 @@
 package initialize
 
 import (
-	cc "hepsiburada-case/init/config"
-	"hepsiburada-case/init/database"
-	"hepsiburada-case/init/infrastructure"
-	"hepsiburada-case/init/repository"
+	cc "github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/init/config"
+	"github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/init/database"
+	"github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/init/infrastructure"
+	"github.com/onurozerdal/github.com/onurozerdal/hepsiburada-case/init/repository"
 )
 
 var config cc.Config

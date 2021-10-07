@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 	"github.com/labstack/echo/v4"
-	"hepsiburada-case/api/database"
-	"hepsiburada-case/api/endpoint"
-	"hepsiburada-case/api/infrastructure"
-	"hepsiburada-case/api/repository"
-	"hepsiburada-case/api/service"
+	"github.com/onurozerdal/hepsiburada-case/api/database"
+	"github.com/onurozerdal/hepsiburada-case/api/endpoint"
+	"github.com/onurozerdal/hepsiburada-case/api/infrastructure"
+	"github.com/onurozerdal/hepsiburada-case/api/repository"
+	"github.com/onurozerdal/hepsiburada-case/api/service"
 )
 
 var apiController *endpoint.ApiController

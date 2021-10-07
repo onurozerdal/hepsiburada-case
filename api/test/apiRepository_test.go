@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/DATA-DOG/go-sqlmock"
+	"github.com/onurozerdal/hepsiburada-case/api/infrastructure"
+	"github.com/onurozerdal/hepsiburada-case/api/repository"
 	"github.com/stretchr/testify/assert"
-	"hepsiburada-case/api/infrastructure"
-	"hepsiburada-case/api/repository"
 )
 
 func NewMock() (*sql.DB, sqlmock.Sqlmock) {

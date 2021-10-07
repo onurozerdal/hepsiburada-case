@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/lib/pq"
-	cc "hepsiburada-case/etl-process/config"
+	cc "github.com/onurozerdal/hepsiburada-case/etl-process/config"
 )
 
 var config cc.Config

@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	cc "hepsiburada-case/stream-reader/config"
-	"hepsiburada-case/stream-reader/database"
-	"hepsiburada-case/stream-reader/infrastructure"
-	"hepsiburada-case/stream-reader/model"
-	"hepsiburada-case/stream-reader/repository"
+	cc "github.com/onurozerdal/hepsiburada-case/stream-reader/config"
+	"github.com/onurozerdal/hepsiburada-case/stream-reader/database"
+	"github.com/onurozerdal/hepsiburada-case/stream-reader/infrastructure"
+	"github.com/onurozerdal/hepsiburada-case/stream-reader/model"
+	"github.com/onurozerdal/hepsiburada-case/stream-reader/repository"
 )
 
 var config cc.Config

@@ -1,4 +1,4 @@
-module stream-reader
+module github.com/onurozerdal/hepsiburada-case/stream-reader
 
 go 1.17
 

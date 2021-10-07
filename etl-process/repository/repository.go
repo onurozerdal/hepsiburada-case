@@ -2,8 +2,8 @@ package repository
 
 import (
 	"fmt"
-	"hepsiburada-case/etl-process/infrastructure"
-	"hepsiburada-case/etl-process/model"
+	"github.com/onurozerdal/hepsiburada-case/etl-process/infrastructure"
+	"github.com/onurozerdal/hepsiburada-case/etl-process/model"
 )
 
 type Repository struct {
@@ -79,21 +79,21 @@ func (repository *Repository) ProductsCategories() ([]model.ProductCategory, err
 }
 
 func (repository *Repository) SaveBestseller(bestseller model.Bestseller) {
-	sqlInsert:= `INSERT INTO bestseller (product_id, quantity) VALUES ($1, $2) RETURNING product_id`
+	sqlInsert := `INSERT INTO bestseller (product_id, quantity) VALUES ($1, $2) RETURNING product_id`
 	dbHandler.QueryRow(sqlInsert, bestseller.ProductId, bestseller.Quantity).Scan(&bestseller.ProductId)
 }
 
 func (repository *Repository) SaveProductCategory(productCategory model.ProductCategory) {
-	sqlInsert:= `INSERT INTO products (product_id, category_id) VALUES ($1, $2) RETURNING product_id`
+	sqlInsert := `INSERT INTO products (product_id, category_id) VALUES ($1, $2) RETURNING product_id`
 	dbHandler.QueryRow(sqlInsert, productCategory.ProductId, productCategory.CategoryId).Scan(&productCategory.ProductId)
 }
 
 func (repository *Repository) ClearBestseller() {
-	sql:= `truncate bestseller`
+	sql := `truncate bestseller`
 	dbHandler.Execute(sql)
 }
 
 func (repository *Repository) ClearProductCategory() {
-	sql:= `truncate products`
+	sql := `truncate products`
 	dbHandler.Execute(sql)
 }
