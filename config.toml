@@ -1,0 +1,19 @@
+[DataDb]
+server="localhost"
+port=5432
+database="data-db"
+user="postgres"
+password = "123456"
+
+[RecommendedDb]
+server="localhost"
+port=5432
+database="recommendation"
+user="postgres"
+password = "123456"
+
+[Kafka]
+bootstrap="localhost"
+group="myGroup"
+offset="earliest"
+topic="topic-product-views"

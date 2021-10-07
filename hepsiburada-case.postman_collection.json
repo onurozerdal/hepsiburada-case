@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "d8eddc32-8ee6-4777-bf4f-27948f50f016",
+		"name": "hepsiburada-case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "browsingHistories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/browsingHistories?user-id=user-16",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"browsingHistories"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "user-16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bestsellerProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/bestsellerProducts?user-id=user-16",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bestsellerProducts"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "user-16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteHistory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/bestsellerProducts?user-id=user-16",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"bestsellerProducts"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "user-16"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
